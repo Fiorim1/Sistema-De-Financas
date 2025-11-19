@@ -31,7 +31,7 @@ Com ele, você gerencia suas finanças de forma simples, moderna e visualmente e
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU_REPOSITORIO_AQUI
+git clone https://github.com/Fiorim1/Sistema-De-Financas
 
 # Entre na pasta
 cd sistema-financas
@@ -42,21 +42,6 @@ npm install
 # Execute o projeto
 npm start
 ```
-
----
-
-## 📂 **Estrutura do Projeto**
-
-```
-📁 src
- ├── 📁 components
- ├── 📁 pages
- ├── 📁 hooks
- ├── 📁 services
- ├── 📁 assets
- └── App.js
-```
-
 ---
 
 ## 🎨 **Design e UX**
