@@ -17,7 +17,7 @@ Com ele, você gerencia suas finanças de forma simples, moderna e visualmente e
 * **HTML5**
 * **CSS3**
 * **JavaScript (ES6+)**
-* **React.js**
+* **React.js (Vite + React Compiler)**
 
 ---
 
