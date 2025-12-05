@@ -4,6 +4,8 @@ import '../components/stylesComponents/styleInsertion.css'
 // Traz a ferramenta do React responsável por criar variáveis que, 
 // quando alteradas, atualizam a tela automaticamente
 import { useState } from 'react'
+// Importando Biblioteca de Escolha
+import Select from "react-select";
 // Define o seu componente funcional (Nome da Função)
 function Insertion() {
 
@@ -75,6 +77,20 @@ function Insertion() {
     // Armazena o saldo final
     const saldoFinal = salarioNumerico - totalDespesas
 
+    const monthOptions = [
+        { value: 'janeiro', label: 'Janeiro' },
+        { value: 'fevereiro', label: 'Fevereiro' },
+        { value: 'março', label: 'Março' },
+        { value: 'abril', label: 'Abril' },
+        { value: 'maio', label: 'Maio' },
+        { value: 'junho', label: 'Junho' },
+        { value: 'julho', label: 'Julho' },
+        { value: 'agosto', label: 'Agosto' },
+        { value: 'setembro', label: 'Setembro' },
+        { value: 'outubro', label: 'Outubro' },
+        { value: 'novembro', label: 'Novembro' },
+        { value: 'dezembro', label: 'Dezembro' },
+    ]
 
     return (
         <div className="app-container">
@@ -100,6 +116,14 @@ function Insertion() {
                             onChange={(e) => setSalario(e.target.value)}
                             placeholder="0.00"
                             className="input-field"
+                        />
+                    </div>
+                    <div className="months">
+                        <span>Selecione o Mês:</span>
+                        <Select
+                            options={monthOptions}
+                            className="select-month"
+                            placeholder="Mês"
                         />
                     </div>
                 </section>
