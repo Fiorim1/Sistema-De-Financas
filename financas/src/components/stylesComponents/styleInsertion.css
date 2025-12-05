@@ -1,4 +1,7 @@
-/* Configurações da Tela */
+/* ------------------------------------------------------ */
+/* ESTILO PADRÃO (MOBILE FIRST)                           */
+/* ------------------------------------------------------ */
+
 .app-container {
   font-family: "Poppins", sans-serif;
   background-color: #f3f4f6;
@@ -9,9 +12,8 @@
   padding: 40px 20px;
 }
 
-/* Cabeçalho Verde */
 .header {
-  background-color: #088004; /* Verde bonito */
+  background-color: #088004;
   color: white;
   width: 100%;
   max-width: 500px;
@@ -20,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* Distância IGUAL dos ícones */
+  gap: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -41,7 +43,6 @@
   font-size: 1.2rem;
 }
 
-/* Cartão Branco Principal */
 .main-card {
   background-color: white;
   width: 100%;
@@ -54,7 +55,6 @@
   gap: 25px;
 }
 
-/* Inputs */
 .input-group label {
   display: block;
   margin-bottom: 8px;
@@ -77,14 +77,13 @@
 .input-field {
   width: 100%;
   padding: 12px;
-  padding-left: 35px; /* Espaço para o símbolo R$ */
+  padding-left: 35px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 1rem;
-  box-sizing: border-box; /* Garante que o padding não estoure a largura */
+  box-sizing: border-box;
 }
 
-/* Formulário */
 .form-nova-despesa {
   background-color: #f9fafb;
   padding: 15px;
@@ -122,7 +121,6 @@
   background-color: #088004;
 }
 
-/* Lista */
 .lista-despesas {
   list-style: none;
   padding: 0;
@@ -156,7 +154,6 @@
   text-decoration: underline;
 }
 
-/* Totais */
 .resumo-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -187,4 +184,83 @@
   font-size: 1.4rem;
   font-weight: bold;
   margin: 5px 0 0 0;
+}
+
+
+/* ------------------------------------------------------ */
+/* MEDIA QUERIES                                           */
+/* ------------------------------------------------------ */
+
+/* 📱 ≥ 480px — Telas pequenas */
+@media (min-width: 480px) {
+  .header h1 {
+    font-size: 1.7rem;
+  }
+
+  .icone-bg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .valor-grande {
+    font-size: 1.6rem;
+  }
+}
+
+/* 📲 ≥ 768px — Tablets */
+@media (min-width: 768px) {
+  .app-container {
+    padding: 60px 40px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .main-card {
+    padding: 40px;
+  }
+
+  .input-field {
+    font-size: 1.1rem;
+    padding: 14px;
+  }
+
+  .valor-grande {
+    font-size: 1.8rem;
+  }
+}
+
+/* 💻 ≥ 1024px — Notebooks */
+@media (min-width: 1024px) {
+  .header {
+    max-width: 600px;
+  }
+
+  .main-card {
+    max-width: 600px;
+  }
+
+  .form-row {
+    gap: 20px;
+  }
+}
+
+/* 🖥️ ≥ 1280px — Desktop grande */
+@media (min-width: 1280px) {
+  .app-container {
+    padding: 80px;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-card {
+    padding: 45px;
+  }
+
+  .valor-grande {
+    font-size: 2rem;
+  }
 }
