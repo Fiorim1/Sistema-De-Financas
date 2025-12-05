@@ -39,8 +39,8 @@ cd sistema-financas
 # Instale as dependências
 npm install
 
-# Execute o projeto
-npm start
+# Execute o projeto (Front-End)
+npm run dev 
 ```
 ---
 
